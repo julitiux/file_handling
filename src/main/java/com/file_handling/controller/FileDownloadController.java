@@ -17,7 +17,7 @@ public class FileDownloadController {
 
   @RequestMapping(value = "/download", method = RequestMethod.GET)
   public ResponseEntity<Object> donwloadFile() throws IOException {
-    String filename = "/var/tmp/mysql.png";
+    String filename = "OSXLion.webp";
     File file = new File(filename);
     InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
     HttpHeaders httpHeaders = new HttpHeaders();
